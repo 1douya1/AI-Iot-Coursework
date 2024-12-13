@@ -1,18 +1,19 @@
-# AI-Iot-Coursework
-This repository contains the code for the Smart Shuttle Management System, which integrates IoT and AI to predict shuttle demand and manage operations efficiently.
+# AI-IoT-Coursework
 
+This repository contains the code and resources for the **Smart Shuttle Management System**, an integration of IoT and AI designed to predict shuttle demand and manage operations efficiently.
 
+## Project Description
+
+The Smart Shuttle Management System leverages sensor data and a regression model to estimate crowd sizes at shuttle stations. The system includes real-time data visualization, LED-controlled demand signaling, and dashboards tailored for shuttle operators and students. The Arduino IoT Cloud and Python scripts are used to implement and integrate the system.
+
+Access additional files and video via Google Drive: https://drive.google.com/drive/folders/1O-69COtVmFYxglTHoGb8D0UkxHS9cSgD?usp=sharing
 
 ## Instructions
-- Upload the `Arduino` code to your ESP32 microcontroller.
-- Set up the Arduino IoT Cloud dashboard using the variables defined in the code.
-- Run the Python scripts for data preprocessing and model development.
 
-## Files
-- `iot_sensor_processing.ino`: Arduino code for sensor integration and LED control.
-- `data_preprocessing.py`: Python script for cleaning and processing sensor data.
-- `model_development.py`: Python script for regression model training and evaluation.
-- `dashboard_integration.md`: Guide for setting up the Arduino IoT Cloud dashboard.
+### Getting Started
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/your-repo/AI-IoT-Coursework.git
 
 :Author: wenhaohong
 :Email: wh624@ic.ac.uk
@@ -42,12 +43,19 @@ Upload the code contained in this repository to your ESP32 board. Ensure the Wi-
 
 ## Folder Structure
 ```
-project-folder
-├── IOT_Sketch.ino      # Main Arduino sketch
-├── schematics.png      # Diagram of the required schematics
-├── layout.png          # Diagram of the hardware layout
-├── ReadMe.md           # This file
-└── libraries.txt       # List of libraries required for the project
+AI-IoT-Coursework/
+│
+├── CollectingDataSet_Part1/       # Sensor datasets and data processing scripts
+│   ├── dataset.csv                # Collected datasets
+│   ├── data_processing.ipynb      # Jupyter Notebook for analysis
+│
+├── IOT_dec06a/                    # Arduino project files
+│   ├── iot_sensor_processing.ino  # Main Arduino code
+│   ├── layout.png                 # Circuit layout (in Google Drive)
+│   └── schematics.png             # Circuit schematics (in Google Drive)
+│
+├── LICENSE                        # Project license (MIT License)
+└── README.md                      # Project overview and instructions
 ```
 
 ## License
