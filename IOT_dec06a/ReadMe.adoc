@@ -1,0 +1,63 @@
+:Author: wenhaohong
+:Email: wenhaohong@example.com
+:Date: 06/12/2024
+:Revision: v1.0
+:License: MIT License
+
+= Project: IOT Coursework
+
+= Features
+- Real-time crowd estimation using sensor data and a regression model.
+- Dynamic dashboard visualization for operators and students.
+- Actuator logic to control LEDs based on demand thresholds.
+- Integration with Arduino IoT Cloud for live data synchronization and predictions.
+
+== Step 1: Installation
+1. Clone or download this repository from GitHub: https://github.com/wenhaohong/iot-coursework.
+2. Install the required libraries in the Arduino IDE, including:
+   - WiFiClientSecure
+   - LoRa
+   - ArduinoIoTCloud
+   - Sensor libraries as mentioned in `libraries.txt` file.
+3. Open the Arduino IDE and configure your ESP32 board:
+   - Go to **Tools > Board > ESP32 Dev Module**.
+   - Set your COM port and upload speed.
+
+== Step 2: Assemble the circuit
+Assemble the circuit following the provided diagram in `layout.png`:
+- Connect sensors (temperature, humidity, and microphone) to the ESP32 microcontroller as per the pin configuration.
+- Attach the LED to indicate demand thresholds.
+- Ensure proper power supply and communication via LoRa.
+
+== Step 3: Load the code
+1. Open the Arduino sketch file `iot_dec06a.ino`.
+2. Configure WiFi and IoT Cloud credentials in the setup section of the code.
+3. Upload the sketch to the ESP32 board using the **Upload** button in the Arduino IDE.
+
+=== Folder structure
+
+....
+ iot-coursework          => Arduino sketch folder
+  ├── iot_dec06a.ino => main Arduino file
+  ├── layout.png         => an image of the layout
+  ├── Sensoring_Structure.jpg        => a diagram of the circuit
+  ├── ReadMe.adoc        => this file
+  ├── libraries.txt      => list of required libraries
+  └── LICENSE            => license for this project
+....
+
+=== License
+This project is released under an MIT License.
+
+=== Contributing
+To contribute to this project please contact: wenhaohong@example.com
+
+=== BOM
+|===
+| ID | Part name            | Part number   | Quantity
+| S1 | Temperature Sensor   | DHT11         | 1        
+| S2 | Humidity Sensor      | DHT11         | 1        
+| S3 | Microphone Sensor    | KY-038        | 1        
+| L1 | Red LED              | 2345-asdf     | 1        
+| A1 | ESP32 Board          | ESP32-DEVKIT  | 1        
+|===
