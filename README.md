@@ -15,7 +15,7 @@ This repository contains the code for the Smart Shuttle Management System, which
 - `dashboard_integration.md`: Guide for setting up the Arduino IoT Cloud dashboard.
 
 :Author: wenhaohong
-:Email:
+:Email: wh624@ic.ac.uk
 :Date: 06/12/2024
 :Revision: version#
 :License: Public Domain
@@ -27,45 +27,41 @@ This repository contains the code for the Smart Shuttle Management System, which
 - Dashboard visualization for operators and students.
 - Actuator logic to control LEDs based on demand thresholds.
 
-== Step 1: Installation
-Please describe the steps to install this project.
+## Step 1: Installation
+1. Clone this repository.
+2. Open the Arduino IDE or Arduino Cloud Editor.
+3. Install all necessary libraries listed in the `libraries.txt` file.
+4. Edit the configuration file (if needed) to match your setup.
+5. Upload the code to your ESP32 board.
 
-For example:
+## Step 2: Assemble the Circuit
+Assemble the circuit following the diagram in `layout.png`. Ensure all sensors and actuators are connected correctly to the ESP32 microcontroller.
 
-1. Open this file
-2. Edit as you like
-3. Release to the World!
+## Step 3: Load the Code
+Upload the code contained in this repository to your ESP32 board. Ensure the Wi-Fi credentials and API keys (if applicable) are set up correctly in the code.
 
-== Step 2: Assemble the circuit
+## Folder Structure
+```
+project-folder
+├── IOT_Sketch.ino      # Main Arduino sketch
+├── schematics.png      # Diagram of the required schematics
+├── layout.png          # Diagram of the hardware layout
+├── ReadMe.md           # This file
+└── libraries.txt       # List of libraries required for the project
+```
 
-Assemble the circuit following the diagram layout.png attached to the sketch
+## License
+This project is released under a Public Domain license.
 
-== Step 3: Load the code
+## Contributing
+To contribute to this project, please contact the author.
 
-Upload the code contained in this sketch on to your board
-
-=== Folder structure
-
-....
- sketch123                => Arduino sketch folder
-  ├── sketch123.ino       => main Arduino file
-  ├── schematics.png      => (optional) an image of the required schematics
-  ├── layout.png          => (optional) an image of the layout
-  └── ReadMe.adoc         => this file
-....
-
-=== License
-This project is released under a {License} License.
-
-=== Contributing
-To contribute to this project please contact: 
-
-=== BOM
-Add the bill of the materials you need for this project.
-
-|===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10       
-| L1 | Red LED        | 2345-asdf   | 5        
-| A1 | Arduino Zero   | ABX00066    | 1        
-|===
+## Bill of Materials (BOM)
+| ID   | Part Name         | Part Number | Quantity |
+|------|-------------------|-------------|----------|
+| R1   | 10k Resistor      | 1234-abcd   | 10       |
+| L1   | Red LED           | 2345-asdf   | 5        |
+| A1   | Arduino Zero      | ABX00066    | 1        |
+| S1   | Microphone Sensor | XYZ12345    | 1        |
+| S2   | Temperature Sensor| TMP36       | 1        |
+| S3   | Humidity Sensor   | DHT11       | 1        
