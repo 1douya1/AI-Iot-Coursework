@@ -59,7 +59,6 @@ To contribute to this project, please contact the author.
 ## Bill of Materials (BOM)
 | ID   | Part Name         | Part Number | Quantity |
 |------|-------------------|-------------|----------|
-| R1   | 10k Resistor      | 1234-abcd   | 10       |
 | L1   | Red LED           | 2345-asdf   | 5        |
 | A1   | Arduino Zero      | ABX00066    | 1        |
 | S1   | Microphone Sensor | XYZ12345    | 1        |
