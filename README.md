@@ -51,8 +51,7 @@ AI-IoT-Coursework/
 │
 ├── IOT_dec06a/                    # Arduino project files
 │   ├── iot_sensor_processing.ino  # Main Arduino code
-│   ├── layout.png                 # Circuit layout (in Google Drive)
-│   └── schematics.png             # Circuit schematics (in Google Drive)
+│   ├── layout.png                 # Circuit layout
 │
 ├── LICENSE                        # Project license (MIT License)
 └── README.md                      # Project overview and instructions
